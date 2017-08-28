@@ -1,0 +1,113 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/white">
+       <!-- Top toolbar  -->
+       <RelativeLayout
+           android:id="@+id/relLayout1"
+           android:layout_width="match_parent"
+           android:layout_height="50dp">
+           <include layout="@layout/snippet_top_profilebar" />
+
+       </RelativeLayout>
+       <!-- Middle Section -->
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/relLayout2"
+           android:layout_below="@+id/relLayout1"
+           android:background="@drawable/white_gray_border_bottom">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:id="@+id/linLayout"
+               android:weightSum="100">
+               <RelativeLayout
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="25"
+                   android:layout_marginLeft="25dp">
+                   <de.hdodenhof.circleimageview.CircleImageView
+                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                       android:layout_width="80dp"
+                       android:layout_height="80dp"
+                       android:id="@+id/profile_photo"
+                       app:civ_border_width="2dp"
+                       android:src="@drawable/ic_insta"
+                       app:civ_border_color="@color/black"
+                       android:layout_centerVertical="true"/>
+
+               </RelativeLayout>
+               <RelativeLayout
+                   android:layout_width="0dp"
+                   android:layout_marginLeft="5dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="75"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginRight="5dp">
+                   <include layout="@layout/snippet_top_profile"/>
+
+               </RelativeLayout>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/linLayout"
+               android:orientation="vertical"
+               android:padding="10dp"
+               android:layout_marginLeft="5dp"
+               android:id="@+id/linlayout2">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/display_name"
+                   android:text="Chandan Siingh"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:textSize="16sp"
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/description"
+                   android:text="I love reading books, Hacking and listen to music."
+                   android:layout_marginTop="5dp"
+                   android:textColor="@color/black"
+                   android:textSize="16sp"/>
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/website"
+                   android:text="http://kartnap.com"
+                   android:layout_marginTop="5dp"
+                   android:textColor="@color/black"
+                   android:textSize="16sp"/>
+
+           </LinearLayout>
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/linlayout2"
+               android:layout_marginBottom="50dp">
+               <GridView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/gridView"
+                   android:numColumns="3"
+                   android:verticalSpacing="1dp"
+                   android:horizontalSpacing="1dp"
+                   android:stretchMode="columnWidth"
+                   android:gravity="center">
+
+               </GridView>
+
+           </RelativeLayout>
+
+       </RelativeLayout>
+   </RelativeLayout>
+</merge>

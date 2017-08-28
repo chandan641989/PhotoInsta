@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "721264972761",
+    "firebase_url": "https://photoinsta-a94ae.firebaseio.com",
+    "project_id": "photoinsta-a94ae",
+    "storage_bucket": "photoinsta-a94ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721264972761:android:88b41410217a6ceb",
+        "android_client_info": {
+          "package_name": "com.kartnap.chandan.photoinsta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721264972761-dm38525b2bdmcmtjho50gfgi70okscl5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kartnap.chandan.photoinsta",
+            "certificate_hash": "ffd5dcf5a2daa5b02fa7fd404012895a906b734e"
+          }
+        },
+        {
+          "client_id": "721264972761-b86o1mahqm0spqrf5nr4nuqg8ql315bl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh-qLsI9VrYx4AT8v0o2jLg0RzBthhpX0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721264972761-b86o1mahqm0spqrf5nr4nuqg8ql315bl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
